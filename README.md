@@ -61,23 +61,43 @@ VS Code / Eclipse / IntelliJ – IDE
 # 📑Project Folder Structure
 
 StudentCourseRegistrationSystem/
+<br>
 │
+<br>
 ├── src/
+<br>
 │   ├── db/
+<br>
 │   │   └── DBConnection.java             # Database connection class
+<br>
 │   │
+<br>
 │   ├── ui/
+<br>
 │   │   ├── LoginFrame.java               # Login screen
+<br>
 │   │   ├── SignUpFrame.java              # Sign up screen
+<br>
 │   │   ├── AdminDashboard.java           # Admin main dashboard
+<br>
 │   │   ├── StudentDashboard.java         # Student main dashboard
+<br>
 │   │   ├── AddCourseFrame.java           # Admin adds new course
+<br>
 │   │   ├── ViewCoursesFrame.java         # Admin views courses
+<br>
 │   │   ├── ViewStudentCountFrame.java    # Admin views total students
+<br>
 │   │   ├── ViewStudentRegistrationsFrame.java  # Admin views student's registered courses
+<br>
 │   │   ├── RegisterCourseFrame.java      # Student registers for course
+<br>
 │   │   ├── DropCourseFrame.java          # Student drops a course
+<br>
 │   │   └── ViewRegisteredCoursesFrame.java     # Student views registered courses
+<br>
 │
+<br>
 ├── lib/
+<br>
       └── mysql-connector-j-9.4.0.jar       # JDBC driver for MySQL
