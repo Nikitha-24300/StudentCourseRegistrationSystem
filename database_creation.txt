@@ -1,0 +1,39 @@
+***Database and tables creation***
+
+✅Step 1: Create database (if not already created)
+CREATE DATABASE student_reg_system;
+USE student_reg_system;
+
+✅ Step 2: Create students table
+CREATE TABLE students (
+    student_id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(50) NOT NULL,
+    full_name VARCHAR(100) NOT NULL
+);
+
+✅ Step 3: Create admins table
+CREATE TABLE admins (
+    admin_id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(50) NOT NULL,
+    full_name VARCHAR(100) NOT NULL
+);
+
+✅ Step 4: Create courses table
+CREATE TABLE courses (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    course_name VARCHAR(100) NOT NULL,
+    total_seats INT NOT NULL,
+    available_seats INT NOT NULL
+);
+
+✅ Step 5: Create registrations table
+CREATE TABLE registrations (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL,
+    course_id INT NOT NULL,
+    
+    FOREIGN KEY (username) REFERENCES students(username) ON DELETE CASCADE,
+    FOREIGN KEY (course_id) REFERENCES courses(id) ON DELETE CASCADE
+);
