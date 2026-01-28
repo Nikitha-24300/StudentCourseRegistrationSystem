@@ -57,3 +57,27 @@ JDBC – Java Database Connectivity
 MySQL Connector/J – JDBC Driver
 
 VS Code / Eclipse / IntelliJ – IDE
+
+# 📑Project Folder Structure
+
+StudentCourseRegistrationSystem/
+│
+├── src/
+│   ├── db/
+│   │   └── DBConnection.java             # Database connection class
+│   │
+│   ├── ui/
+│   │   ├── LoginFrame.java               # Login screen
+│   │   ├── SignUpFrame.java              # Sign up screen
+│   │   ├── AdminDashboard.java           # Admin main dashboard
+│   │   ├── StudentDashboard.java         # Student main dashboard
+│   │   ├── AddCourseFrame.java           # Admin adds new course
+│   │   ├── ViewCoursesFrame.java         # Admin views courses
+│   │   ├── ViewStudentCountFrame.java    # Admin views total students
+│   │   ├── ViewStudentRegistrationsFrame.java  # Admin views student's registered courses
+│   │   ├── RegisterCourseFrame.java      # Student registers for course
+│   │   ├── DropCourseFrame.java          # Student drops a course
+│   │   └── ViewRegisteredCoursesFrame.java     # Student views registered courses
+│
+├── lib/
+      └── mysql-connector-j-9.4.0.jar       # JDBC driver for MySQL
