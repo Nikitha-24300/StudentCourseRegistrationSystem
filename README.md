@@ -1,8 +1,8 @@
-Student Course Registration System
+# Student Course Registration System
 
 A Java Swing–based desktop application that allows students to register for courses and admins to manage courses and monitor registrations, backed by a MySQL database.
 
-📌 Project Overview
+# 📌 Project Overview
 
 The Student Course Registration System is designed to automate the manual process of course enrollment.
 It provides role-based access where:
@@ -13,7 +13,7 @@ It provides role-based access where:
 
 The system ensures real-time seat availability updates and maintains data securely using a relational database.
 
-🚀 Features
+# 🚀 Features
 ✅ Common Features
 
 Login and Sign Up for both Student and Admin
@@ -22,7 +22,7 @@ Secure database connectivity using JDBC
 
 Clean and professional GUI with Java Swing
 
-👨‍🎓 Student Module
+# 👨‍🎓 Student Module
 
 View available courses
 
@@ -34,7 +34,7 @@ View registered courses
 
 Logout
 
-🧑‍💼 Admin Module
+# 🧑‍💼 Admin Module
 
 Add new courses
 
@@ -46,7 +46,7 @@ View courses registered by each student
 
 Logout
 
-🛠 Technologies Used
+# 🛠 Technologies Used
 
 Java (Swing) – GUI development
 
